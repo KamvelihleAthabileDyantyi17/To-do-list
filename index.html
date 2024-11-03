@@ -11,15 +11,19 @@
 <body>
     <div class="container">
         <div class="todo-app">
-            <h2>To-DO List <img src="Notepad.jpeg" alt="Notepad icon"></h2>
+            <!-- This just help me but the picture next to to do list
+             there was no need for it to become a favicon -->
+            <h2>To-Do List <img src="Notepad.jpeg" alt="Notepad icon"></h2>
             <div class="row">
                 <input type="text" id="input-box" placeholder="Add your text">
-                <button id="addButton" aria-label="Add task">Add</button>  
+                <button onclick="addTask()">Add</button>  
             </div>
+            <!-- By closing the div class row and creating the ul id list-container 
+             the list is under the row-->
             <ul id="list-container">
-                <li>Task 1</li>
-                <li>Task 2</li>
-                <li>Task 3</li>
+                <!-- <li class = "checked">Task 1</li>
+                <li class = "checked">Task 2</li>
+                <li class = "checked">Task 3</li>  -->
             </ul>
         </div>
     </div>
